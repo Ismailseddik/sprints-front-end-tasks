@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600&display=swap');
+
+
+:root{
+    --orange:#ff7800;
+    --black:#130f40;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.2rem solid rgba(0,0,0,.1);
+    --outline:.1rem solid rgba(0,0,0,.1);
+    --outline-hover:.2rem solid var(--black);
+
+}
+
+
+
+
+*{
+    font-family: 'Cairo', sans-serif;
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    outline: none;border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 65%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+body{
+    background: url("ecommerce\ logo.webp") no-repeat;
+    background-size:cover;
+    background-position: center ;
+    position:center;
+    padding-top: 5rem;
+}
+
+.logo img{
+    width: 115px;
+    float:left;
+    
+}
+
+section{
+    padding: 2rem;
+}
+
+
+.header{
+    position: fixed;
+    top:0;left:0;right:0;
+    z-index: 1000;
+    display:flex;
+    align-items:center ;
+    justify-content: space-between;
+    padding:2rem 9%;
+    background:#fff;
+    box-shadow:var(--box-shadow)
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+}
+
+.header .logo i{
+    color: var(--black);
+}
+.header .navbar a{
+    font-size:1.7rem;
+    margin:0 1rem;
+    color:var(--black)
+}
+.header .navbar a:hover{
+    color:var(--orange)
+}
+
+.header .icons div{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height:2.5;
+    border-radius:.5rem;
+    background:#eee;
+    color: var(--black);
+    font-size: 2rem;
+    margin-left: .3rem;
+    text-align:center;
+    cursor: pointer;
+}
+.header .icons div:hover{
+    background: var(--orange);
+    color: #fff;
+}
+#search-btn{
+    display:none;
+}
+
+
+.header .search-form{
+    max-width: 50rem;
+    height:4rem;
+    background: #fff;
+    border-radius: .5rem;
+    overflow:auto ;
+    display: flex;
+    align-items: center;
+}
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.5rem;
+    color: var(--black);
+    padding: 1.5rem;
+}
+.header .search-form label{
+font-size: 2.2rem;
+padding-right: 1.5rem;
+color: var(--black);
+cursor: pointer;
+}
+.header .search-form label:hover{
+    color: var(--orange);
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home .content{
+    text-align: center;
+    width: 60rem;
+}
+.home .Recommendations{
+    
+    margin: 5rem;
+    padding:2rem;
+  
+
+}
+.home .Recommendations:first-child{
+   margin: 5rem;
+    margin-bottom: 2rem;
+}
+.home  .heading{
+    text-align: center;
+    background: rgba(255, 255, 255, 0.4);
+    text-decoration: #eee;
+    padding: 2rem;
+}
+.home .Recommendations .box{
+    background-position: center;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: .5rem;
+    text-align: center;
+    text-decoration: #eee;
+    padding: 3rem 2rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow)
+}
